@@ -185,7 +185,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[InsertOrderDetails]"
+					"storedProcedureName": "[dbo].[InsertOrderDetails4]"
 				},
 				"linkedServiceName": {
 					"referenceName": "LSAzureSqlDatabase2",

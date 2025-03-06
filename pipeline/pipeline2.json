@@ -31,6 +31,8 @@
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": false,
+										"modifiedDatetimeStart": null,
+										"modifiedDatetimeEnd": null,
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -57,13 +59,25 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
 									"referenceName": "AzureSqlTable2",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"tablename": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
@@ -132,7 +146,13 @@
 							"inputs": [
 								{
 									"referenceName": "DelimitedText2",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"order": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [

@@ -1,0 +1,9 @@
+{
+	"name": "datafactoryadfassessment",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1b769ed2-3de9-4220-ad30-0b19dad53c49",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}
